@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+  }
+div{
+    background-color: cyan;
+    height: 150px;
+    width: 500px;
+    display: flex;
+    font-size: 200%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 550px;
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+    border-radius: 20px;
+} 
+h1{
+    position: relative;
+    left: 600px;
+    top: 20px;
+}
+hr{
+    position: relative;
+    top: 20px;
+}
+nav{
+    position:relative;
+    top: 20px;
+    left: 650px;
+    font-size: 100%;
+}
+footer{
+    position:relative;
+    left: -20px;
+    font-size: 80%;
+    top: 20px;
+}
