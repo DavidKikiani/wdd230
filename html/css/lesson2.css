@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background: white;
+    width: 480px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.card-image{
+    height: 800px;
+    margin-bottom: 15px;
+    border-radius: 15px 15px 0 0;
+}
+.card-1 {
+    background-image: url('https://i.ibb.co/Cs9X1sN/Webp-net-resizeimage.jpg')
+}
+.card-2 {
+    background-image: url('https://i.ibb.co/xKkBFvT/Webp-net-resizeimage-2.jpg')
+}
+.card-3 {
+    background-image: url('https://i.ibb.co/zFHJfQS/Webp-net-resizeimage-1.jpg')
+}
+footer{
+    position:relative;
+    left: 500px;
+    top: 300px;
+}
