@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+}
+
+header, nav, main, footer {
+    margin: .75rem auto;
+    max-width: 1060px;
+  }      
+
+header, footer {
+    background-color: #000000;
+    text-align: center;
+    color: #9C9C9C;
+    justify-content: center;
+    padding: 1rem;
+}
+
+section p {
+    padding: 1rem;
+}
+
+.columns {
+    display: grid;
+    grid-gap: 10px;
+}
+
+div section {
+    background-color: #0d0d35;
+}
+
+div section img {
+    border: 1px solid #bbb;
+    display: flex;
+    justify-self: center;
+}
+
+div section p {
+    padding-top: 1rem;
+    color: #FFFFFF;
+}
+
+div section ul {
+    padding: 1.5rem;
+    color: #ffffff;
+}
+
+.colorcolumn, .fontcolumn, .audiencecolumn, .indexcolumn {
+    background-color: #DCDCDC;
+    border-radius: 10px;
+    text-align: center;
+}
+
+img {
+    width: 96%;
+    height: auto;
+    margin: 1rem auto;
+
+}
+
+nav {
+	background-color: #0d0d35;
+	max-width: 1060px;
+}
+
+
+nav ul {
+    list-style-type: none;
+	overflow: hidden;
+    padding: 0;
+
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+}
+
+h1, h2, h3, h4, .montserrat {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h3, h4 {
+	display: block;
+	padding: 5px;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.green {
+    color: #0d0d35
+}
+
+.headertext {
+    color:#9C9C9C;
+    background-color: #000000;
+}
+
+.active {
+	color: yellow;
+    background-color: #0d0d35;
+}
+
+.menutext {
+	padding: 0.75rem;
+    color: #ffffff;
+    background-color: #0d0d35;
+}
