@@ -1,203 +1,73 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: .95em;
-}
+@media only screen and (min-width: 45em) {
+    body {
+        font-size: 1.25rem;
+    }
+    
+    .headings h1 {
+        font-size: 1.75rem;
+    }
+    
+    picture {
+        width: 90%;
+        height: auto;
+    }
 
-body {
-    font-family: 'Dosis', sans-serif;
-    font-size: 16px;
-}
+    a img {
+        width: 40px;
+        height: auto;
+    }
+    
 
-header, nav, main, footer {
-    margin: .75rem auto;
-}     
+    .navigation {
+        justify-content: right;
+    }
 
-header, footer, .navigation a, .date, div section, a:link, a:visited {
-    color: #FFFFFF;
-}
+    .responsive {
+        position: relative;
+        width: 100px;
+    }    
 
-header {
-    background-color: #000000;
-    display: grid;
-    padding: 5px;
-    align-content: center;
-    align-items: center;
-}
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+        
+    #hero {
+        grid-column: 1 / 4;
+    }
 
-.headings h1 {
-    margin: 0;
-}
+    #news {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
 
-footer {
-    background-color: #000000;
-    display: grid;
-    padding: 5px;
-}
+    #spotlight {
+        grid-column: 1 / 4;
+        grid-row: 3;
+        grid-template-columns: 1fr 1fr;
+    }
+        
+    #join {
+        display: block;
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
 
-.headings {
-    margin-left: 2em;
-}
+    #event {
+        display: block;
+        grid-column: 1 / 3;
+        grid-row: 5;
+    }
 
-picture {
-    align-self: center;
-}
+    footer {
+        grid-template-columns: 150px 1fr 1fr;
+    }
 
-picture img, footer img {
-    max-width: 204px;
-    width: 100%;
-    height: auto;
-}
+    .footeraddress {
+        text-align: left;
+    }
 
-a img {
-    width: 25px;
-    height: auto;
-}
-
-.headings {
-    grid-column: 2 / 3;
-}
-
-.headings span {
-    font-size: 20px;
-}
-
-.social {
-    grid-column: 4;
-}
-
-nav {
-    grid-column: 5;
-    height: 50px;
-
-}
-
-.date {
-    grid-column: 1 / 6;
-    grid-row: 2;
-    text-align: center;
-}
-
-.boxes {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px;
-    gap: 10px;
-    padding: 15px;
-}
-
-nav {
-    margin: 0 auto;
-    max-width: 760px;
-    z-index: 2;
-}
-
-.navigation {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-}
-
-.navigation li:first-child {
-    display: block;
-}
-
-.navigation li {
-	display: none;
-}
-
-.navigation a {
-    display: block;
-    padding: 0.75rem;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-.navigation a:hover {
-    color: yellow;
-    font-weight: 700;
-}
-
-/* CHANGE COLOR SCHEME TO REMOVE GOLD AND ADD LIGHT GREEN */
-.responsive, .date, .boxes>section, #spotlight>div {
-    border: 1px solid #0d0d35;
-}
-
-.date, div section {
-    background-color: #0d0d35;
-}
-
-.responsive {
-    position: relative;
-    background-color: #000000;
-}
-
-.responsive li {
-    display: block;
-}
-
-.date {
-    margin: 0.5 rem;
-    padding: 0.75rem;
-}
-
-.boxes {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 15px;
-}
-
-.boxes>section {
-    width: 100%;
-    height: 100px;
-    text-align: left;
-    padding: 15px;
-}
-
-#join {
-    display:none;
-}
-
-#spotlight {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
-    height: 100%;
-}
-
-#spotlight>div {
-    height: 50px;
-    padding: 10px;
-}
-
-#spotlight>div:nth-child(3) {
-    display: none;
-}
-
-div section, .footeraddress {
-    font-style: italic;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 15px;
-    text-align: center;
-}
-
-footer>img {
-    margin: 0 auto;
-}
-/* CHANGE COLOR SCHEME TO REMOVE GOLD AND ADD LIGHT GREEN */
-#footercopyright {
-    border-top: #0d0d35 1px solid;
-    padding: 5px;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif;
+    #footercopyright {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
 }

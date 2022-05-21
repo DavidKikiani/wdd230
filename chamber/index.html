@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Products Chamber of Commerce</title>
     <meta name="description" content="Index page for the Chamber of Commerce for the Beauty Products community.">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico">       
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -18,6 +18,16 @@
 </head>
 <body>
     <header>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         <picture>
             <img src="images/beauty.jpg" alt="Beauty Products Logo" width="204" height="132">
         </picture>
@@ -29,43 +39,79 @@
             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook link" width="48" height="48"></a>
             <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Linkedin link" width="48" height="48"></a>
         </div>
-        <nav>
-            <ul class="navigation">
-                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Discover</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
         <h2 class="date"></h2>
     </header>
 
     <main>
-        <div class="boxes">
-            <section id="hero">Hero with site name and call to action</section>
-            <section id="event">Event</section>
-            <section id="weather">Weather</section>
-            <section id="news">News Release</section>
-            <section id="join">Join</section>
-            <section id="spotlight">
-                <div>Spotlight 1</div>
-                <div>Spotlight 2</div>
-                <div>Spotlight 3</div>
-            </section>
-        </div>
+        <section id="hero">
+            <h3>Welcome to Our Website</h3>
+            <span id="herojoin"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Join the Chamber</a></span>
+        </section>
+        <section id="event">
+            <h3>Beauty Products Formula</h3>
+            <p>Join us every Saturday at 7:00 p.m. to learn more about our products. <a href="https://www.makingcosmetics.com/Formulas_ep_5.html">More info ...</a></p>    
+        </section>
+        <section id="weather">
+            <h3>Weather Summary</h3>
+            <div id="weatherboxes">
+                <picture>
+                    <img class="weatherimg" src="images/weather.jpg" alt="Beauty Products Weather Report" width="120" height="103">
+                </picture>
+                <span class="temperaturetext">33° C</span>
+                <div class="weathertext twocol">
+                    <span>Partly Cloudy</span>
+                    <hr>
+                </div>
+                <p>Wind Speed: </p>
+                <p>2.5 km/h</p>
+                <p>Wind Chill: </p>
+                <p>N/A</p>
+            </div>
+        </section>
+        <section id="news">
+            <h3>News Release</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </section>
+        <section id="join">
+            <h3 id="joinbutton"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Join us!</a></h3>
+            <p>Discover how to join us and how it will benefit your healthy hair!</p>
+        </section>
+        <section id="spotlight">
+            <div>
+                <h3>Healthy Food Nearby</h3>
+                <img src="images/spotlight1.jpg" alt="Healthy Food" width="300" height="250">
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">"Serving healthy food that will benefit your healthy lifestyle."</a></p>
+                <hr>
+                <p>123-456-6146</p>
+                <a href="info@healthyfood.com">info@healthyfood.com</a>
+            </div>
+            <div>
+                <h3>Bookstore with all kinds of books</h3>
+                <img src="images/spotlight2.jpg" alt="Forest Book" width="300" height="250">
+                <p class="spotlightlink"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">"The bookstore for readers of all ages!"</a></p>
+                <hr>
+                <p>321-654-1117</p>
+                <a href="info@bookstore.com">info@bookstore.com</a>
+            </div>
+            <div>
+                <h3>Moving Service</h3>
+                <img src="images/spotlight3.jpg" alt="Barbeque food" width="300" height="250">
+                <p class="spotlightlink"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">"The cheapest moving service around."</a></p>
+                <hr>
+                <p>789-101-2487</p>
+                <a href="support@movingservice.com">support@movingservice.com</a>
+            </div>
+        </section>
     </main>
 
     <footer>
         <img src="images/beauty.jpg" alt="Beauty Products Logo" width="204" height="132">
         <div class="footeraddress">      
-            <h3>Beauty Products</h3>
-            <p>Chamber of Commerce</p>
-            <p>Abashidze str.42 Beauty Products</p>
+            <h3>Beauty Products Chamber of Commerce</h3>
+            <p>Abashidze str. 42 || Tbilisi, Georgia</p>
         </div>
         <div class="footercontact">
-            <a href="info@beautyproducts.org">info@beautyproducts.org</a>
+            <a href="info@beautyproducts.com">info@beautyproducts.com</a>
             <p>+995591217993</p>
             <a href="https://maps.google.com"><img src="images/googlemaps.png" alt="Location link" width="100" height="100"><span>Location Map</span></a>
         </div>

@@ -2,28 +2,33 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: .95em;
 }
 
 body {
     font-family: 'Dosis', sans-serif;
     font-size: 16px;
+    color: #FFFFFF;
 }
 
 header, nav, main, footer {
     margin: .75rem auto;
-}     
+}  
 
-header, footer, .navigation a, .date, div section, a:link, a:visited {
+.navigation a, .responsive, a:link, a:visited {
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 header {
     background-color: #000000;
     display: grid;
-    padding: 5px;
+    padding: 1rem;
     align-content: center;
     align-items: center;
+}
+
+.headings span {
+    font-size: 1.25rem;
 }
 
 .headings h1 {
@@ -33,7 +38,7 @@ header {
 footer {
     background-color: #000000;
     display: grid;
-    padding: 5px;
+    padding: 1rem;
 }
 
 .headings {
@@ -55,20 +60,12 @@ a img {
     height: auto;
 }
 
-.headings {
-    grid-column: 2 / 3;
-}
-
-.headings span {
-    font-size: 20px;
-}
-
 .social {
     grid-column: 4;
 }
 
 nav {
-    grid-column: 5;
+    grid-column: 1;
     height: 50px;
 
 }
@@ -79,12 +76,20 @@ nav {
     text-align: center;
 }
 
-.boxes {
+main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px;
-    gap: 10px;
-    padding: 15px;
+    gap: .75rem;
+    padding: 1rem;
+}
+
+main>section {
+    padding: 1rem;
+}
+
+#event p a {
+    text-decoration: underline;
+    text-align: center;
 }
 
 nav {
@@ -109,23 +114,21 @@ nav {
 
 .navigation a {
     display: block;
-    padding: 0.75rem;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
 }
-
 
 .navigation a:hover {
     color: yellow;
     font-weight: 700;
 }
 
-/* CHANGE COLOR SCHEME TO REMOVE GOLD AND ADD LIGHT GREEN */
-.responsive, .date, .boxes>section, #spotlight>div {
-    border: 1px solid #0d0d35;
+.responsive, .date, main>section, #spotlight>div {
+    border: 1px solid #44a6c6;
 }
 
-.date, div section {
+.date, main section {
     background-color: #0d0d35;
 }
 
@@ -140,64 +143,115 @@ nav {
 
 .date {
     margin: 0.5 rem;
-    padding: 0.75rem;
+    padding: 1rem;
 }
 
-.boxes {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 15px;
+#hero {
+	width: 100%;
+	height: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/herobackground.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    justify-content: center;
 }
 
-.boxes>section {
-    width: 100%;
-    height: 100px;
-    text-align: left;
-    padding: 15px;
+#herojoin {
+    width: 130px;
+	background: #000000;
+    border-radius: 10px;
+    text-align: center;
+	padding: 1rem;
+    margin: 0 auto;
+    margin-top: 1.3rem;
+
 }
+
 
 #join {
     display:none;
 }
 
+#joinbutton {
+    position: relative;
+    /* Look into a better way of doing this */
+	background: #000000;
+    border-radius: 10px;
+	padding: 1rem;
+}
+
+
+#weatherboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: right;
+}
+
+.weathertext {
+    font-size: 2rem;
+    border-bottom: #44a6c6 1px solid;
+    margin: 1rem;
+
+}
+
+.temperaturetext {
+    font-size: 3rem;
+}
+
 #spotlight {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 5px;
+    gap: .3rem;
     height: 100%;
+    text-align: center;
 }
 
 #spotlight>div {
-    height: 50px;
-    padding: 10px;
+    padding: 1rem;
 }
 
 #spotlight>div:nth-child(3) {
     display: none;
 }
 
-div section, .footeraddress {
-    font-style: italic;
+#spotlight div span {
+    border-bottom: #44a6c6;
+}
+
+main section h3, main section p {
+    text-align: center;
+    z-index: 2;
 }
 
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 15px;
+    gap: .75rem;
+    padding: 1rem;
     text-align: center;
 }
 
 footer>img {
     margin: 0 auto;
 }
-/* CHANGE COLOR SCHEME TO REMOVE GOLD AND ADD LIGHT GREEN */
 #footercopyright {
-    border-top: #0d0d35 1px solid;
-    padding: 5px;
+    border-top: #44a6c6 1px solid;
+    padding: 1rem;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    margin: 2rem;
+}
+
+.twocol {
+    grid-column: 1/3;
+}
+
+hr {
+    border: 1px solid #44a6c6;
 }
