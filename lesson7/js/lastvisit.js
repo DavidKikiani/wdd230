@@ -15,7 +15,7 @@ const daysbetween = currentvisit / (1000 * 60 *60 * 24);
 if (numVisits !== 0) {
     elapsed.textContent = `Welcome back. You have visitied ${numVisits} times. It has been ${Math.round(daysbetween)} days since your last visit.`;
 } else {
-    elapsed.textContent = `Welcome to Black Forest. This is your first visit.`;
+    elapsed.textContent = `Welcome to our website. This is your first visit.`;
 }
 
 // increment the number of visits.
