@@ -104,3 +104,23 @@
         grid-column: 3/4;
         grid-row: 1/5;
     }
+    /* Join */
+    form {
+        grid-column: 1/6;
+    }
+
+    
+    .formgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .largetext {
+        font-size: 1.5rem;
+    }
+
+    /* Thanks */
+    .thanks {
+        grid-column: 1/6;
+    }    
