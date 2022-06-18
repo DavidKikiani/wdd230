@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Beauty Products Chamber of Commerce</title>
+    <meta name="description" content="Join the Beauty Products Chamber of Commerce, and get many privilegies.">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">      
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li><a id="hamburgermenu" href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../lesson8/discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <picture class="logo">
+            <img src="images/beauty.webp" alt="Beauty Procuts Logo" width="204" height="132">
+        </picture>
+        <section class="headings">
+            <h1>Beauty Products<br><span>Chamber of Commerce</span></h1>
+        </section>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook link" width="48" height="48"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.png" alt="Linkedin link" width="48" height="48"></a>
+        </div>
+        <h2 class="date">N/A</h2>
+    </header>
+
+    <div id="meetandgreet"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">🤝🏼Join us every Saturday at 7:00 p.m. to learn more about our products.</a><span class="dismiss">❌</span></div> 
+    
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset class="formgrid">
+                <legend>Applicant Information</legend>
+                <label class="top">First Name<span class="required">*</span> <input type="text" name="fname" placeholder="Jane" required></label>
+                <label class="top">Last Name<span class="required">*</span> <input type="text" name="lname" placeholder="Smith" required></label>
+                <label class="top">Title <input type="text" placeholder="Letters, spaces, and hyphens only" pattern="[A-Za-z -]{7,}" name="title"></label>
+                <label class="top">Email<span class="required">*</span> <input type="email" name="email" placeholder="user@email.com" required></label>
+                <label class="top">Phone<span class="required">*</span> <input type="tel" name="phone" placeholder="983-555-5555" required></label>
+                <label class="top">Referal Name<span class="required">*</span> <input type="text" name="bname" placeholder="Beauty Products Chamber of Commerce" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Why Do You Want To Join?</legend>
+                <label class="businessdescription">
+                <textarea name="description" rows="5"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div class="formgrid largetext">
+                    <label class="sbs"><input type="radio" name="audience" value="np">Non-Profit Membership</label>
+                    <span>Become an associate member of the Beauty Products Chamber of Commerce at no cost.</span>
+                    <label class="sbs"><input type="radio" name="audience" value="bronze">Bronze Membership</label>
+                    <span>Join the Bronze Membership level of the Chamber of Commerce for $50/month. This grants you access 
+                        to request what type of products you want to see next in our brand.</span>
+                    <label class="sbs"><input type="radio" name="audience" value="silver">Silver Membership</label>
+                    <span>Join the Silver Membership level of the Chamber of Commerce for $100/month. Beyond Bronze Member perks,
+                        this grants you an early access to our currently planned products.</span>
+                    <label class="sbs"><input type="radio" name="audience" value="gold">Gold Membership</label>
+                    <span>Join the Gold Membership level of the Chamber of Commerce for $200/month. Beyond Silver Member perks,
+                        Gold Members are granted an early access to all of our current and future products.</span>
+                    </div>
+                <label class="hidden"><input type="hidden" id="submitdate" name="submitdate"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirm and Apply</legend>
+                <label class="sbs"><input type="checkbox" id="agreemail" name="agreemail">I would like to receive emails related to the Beauty Products Chamber of Commerce.</label>
+                <label class="sbs"><input type="checkbox" id="agreeconditions" name="agreeconditions" required>I have read and agree to the conditions of membership for the Beauty Products Chamber of Commerce.<span class="required">*</span></label>
+            </fieldset>
+    
+            <input type="submit" value="Apply for Membership" class="submitBtn">
+    
+        </form>
+    </main>
+
+    <footer>
+        <picture class="logo">
+            <img src="images/beauty.webp" alt="Beauty Products Logo" width="204" height="132">            
+        </picture>
+        <div class="footeraddress">      
+            <h3>Beauty Products Chamber of Commerce</h3>
+            <p>Abashidze str. 42 || Tbilisi, Georgia</p>
+        </div>
+        <div class="footercontact">
+            <a href="info@beautyproducts.com">info@beautyproducts.com</a>
+            <p>+995591217993</p>
+            <a href="https://maps.google.com"><img src="images/googlemaps.png" alt="Location link" width="100" height="100"><span>Location Map</span></a>
+        </div>
+        <div id="footercopyright">
+            <p id="footertext"></p>     
+            <p id="lastVisit"></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/join.js"></script>          
+    <script src="js/lastvisit.js"></script>          
+</body>
+</html>

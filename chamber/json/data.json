@@ -1,0 +1,77 @@
+{
+    "affiliates": [
+        {
+            "name": "Bookstore with all kinds of books",
+            "phone": "321-654-1117",
+            "email": "info@bookstore.com",
+            "website": "bookstore.com",
+            "image": "images/spotlight2.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Healthy Food Nearby",
+            "phone": "123-456-6146",
+            "email": "info@healthyfood.com",
+            "website": "healthyfood.com",
+            "image": "images/spotlight1.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Moving Service",
+            "phone": "789-101-2487",
+            "email": "support@movingservice.com",
+            "website": "movingservice.com",
+            "image": "images/spotlight3.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Construction Service",
+            "phone": "720-482-1824",
+            "email": "support@constructionservice.com",
+            "website": "constructionservice.com",
+            "image": "images/silver1.jpg",
+            "membership": "Silver"
+        },
+        {
+            "name": "Electric Service",
+            "phone": "720-533-2822",
+            "email": "info@electricservice.com",
+            "website": "electricservice.com",
+            "image": "images/silver2.jpg",
+            "membership": "Silver"
+        },
+        {
+            "name": "Hampton Market",
+            "phone": "303-921-2520",
+            "email": "support@market.com",
+            "website": "market.com",
+            "image": "images/silver3.jpg",
+            "membership": "Silver"
+        },
+        {
+            "name": "Law Service",
+            "phone": "303-421-5821",
+            "email": "support@lawservice.com",
+            "website": "lawservice.com",
+            "image": "images/bronze1.jpg",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Tax Consultants",
+            "phone": "303-972-3523",
+            "email": "info@taxes.com",
+            "website": "taxes.com",
+            "image": "images/bronze2.jpg",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Shoe Store",
+            "phone": "303-922-2152",
+            "email": "help@shoestore.com",
+            "website": "shoestore.com",
+            "image": "images/np1.jpg",
+            "membership": "NP"
+        }
+
+    ]
+} 
