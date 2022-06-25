@@ -59,19 +59,18 @@
         <section id="weather">
             <h3>Weather Summary</h3>
             <div id="weatherboxes">
-                <picture>
-                    <img class="weatherimg" src="images/weather.jpg" alt="Beaut Products Weather Report" width="120" height="103">
-                </picture>
-                <p class="temperaturetext"><span class="temperature">33</span>° F</p>
-                <div class="weathertext twocol">
-                    <span>Partly Cloudy</span>
-                    <hr>
-                </div>
-                <p>Wind Speed: </p>
-                <p><span class="windspeed">4.0</span> mph</p>
-                <p>Wind Chill: </p>
-                <p class="windchill">N/A</p>
-            </div>
+                <figure id="temperatureicon">
+                    <img src="https://openweathermap.org" alt="Weather Icon" id="weather-icon" width="256" height="256">
+                </figure>            
+                <p class="temperaturetext"><span id="current-temp"></span>° F</p>
+                <figure class="weathertext twocol">
+                    <figcaption></figcaption>
+                </figure>
+                 <p class="tworemfont">Wind Speed: </p>
+                 <p class="windspeed tworemfont"><span id="speed"></span> mph</p>
+                 <p class="tworemfont">Wind Chill: </p>
+                 <p class="windchill tworemfont">N/A</p>
+             </div>
         </section>
         <section id="news">
             <h3>News Release</h3>
@@ -128,6 +127,7 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/windchill.js"></script>            
+    <script src="js/lastvisit.js"></script>          
+    <script src="js/weatherapi.js"></script>                
 </body>
 </html>
