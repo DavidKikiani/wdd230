@@ -6,6 +6,7 @@
             "email": "info@bookstore.com",
             "website": "bookstore.com",
             "image": "images/spotlight2.webp",
+            "quote": "'Where the magic happens.'",
             "membership": "Gold"
         },
         {
@@ -14,6 +15,7 @@
             "email": "info@healthyfood.com",
             "website": "healthyfood.com",
             "image": "images/spotlight1.webp",
+            "quote": "'Try our food and be satisfied.'",
             "membership": "Gold"
         },
         {
@@ -22,6 +24,7 @@
             "email": "support@movingservice.com",
             "website": "movingservice.com",
             "image": "images/spotlight3.webp",
+            "quote": "'Decided to move out? Give us a call.'",
             "membership": "Gold"
         },
         {
@@ -30,6 +33,7 @@
             "email": "support@constructionservice.com",
             "website": "constructionservice.com",
             "image": "images/silver1.jpg",
+            "quote": "'Providing the highest quality service.'",
             "membership": "Silver"
         },
         {
@@ -38,6 +42,7 @@
             "email": "info@electricservice.com",
             "website": "electricservice.com",
             "image": "images/silver2.jpg",
+            "quote": "'Problems with electricity? We got you.'",
             "membership": "Silver"
         },
         {
@@ -46,6 +51,7 @@
             "email": "support@market.com",
             "website": "market.com",
             "image": "images/silver3.jpg",
+            "quote": "'Market with all the healthy food.'",
             "membership": "Silver"
         },
         {
@@ -54,6 +60,7 @@
             "email": "support@lawservice.com",
             "website": "lawservice.com",
             "image": "images/bronze1.jpg",
+            "quote": "'Legal trouble? Our law service is here.'",
             "membership": "Bronze"
         },
         {
@@ -62,6 +69,7 @@
             "email": "info@taxes.com",
             "website": "taxes.com",
             "image": "images/bronze2.jpg",
+            "quote": "'Because you shouldn't have to do taxes on your own.'",
             "membership": "Bronze"
         },
         {
@@ -70,6 +78,7 @@
             "email": "help@shoestore.com",
             "website": "shoestore.com",
             "image": "images/np1.jpg",
+            "quote": "'Great Value shoes.'",
             "membership": "NP"
         }
 
