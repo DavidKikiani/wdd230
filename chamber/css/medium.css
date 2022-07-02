@@ -1,57 +1,43 @@
-@media only screen and (min-width: 60em) {
-    body {
-        font-size: 1.25rem;
-    }
-    
-    .headings h1 {
-        font-size: 1.75rem;
-    }
-    
-    picture {
-        height: auto;
+@media only screen and (min-width: 40em) {
+
+    header {
+        display: grid;
+        justify-content: inherit;
+        align-items: center;
     }
 
-    a img {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+    .social {
+        grid-column: 2/3;
+    }
+
+    .date {
+        grid-column: 1/3;
+    }
+
+    .social img, .footercontact img {
         width: 40px;
-        height: auto;
-    }
-    
-
-    .navigation {
-        justify-content: right;
     }
 
-    .responsive {
-        position: relative;
-        width: 100px;
-    }    
-
-    main {
+    .maingrid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
     #hero {
         grid-column: 1 / 4;
     }
-
-    #herojoin {
-        bottom: 30px;
-        right: 200px;
-        left: 200px;
-    }
-
-    .herotextoverlay {
-        top: 10px;
-        right: 300px;
-        left: 300px;
-    }
     
-
     #news {
         grid-column: 1 / 4;
         grid-row: 2;
-        height: 300px;
-        background-image: url("../images/news_medium.jpg");
+        height: 100%;
     }
 
     #spotlight {
@@ -64,15 +50,10 @@
         display: block;
         grid-column: 1 / 4;
         grid-row: 4;
-        background-image: url("../images/join_medium.jpg");
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-    }
-
-    #join p {
-        bottom: 10px;
     }
 
     #event {
@@ -81,34 +62,23 @@
         display: flex;
     }
 
-    footer {
-        grid-template-columns: 150px 1fr 1fr;
-    }
-
-    .footeraddress {
-        text-align: left;
-    }
-
     #footercopyright {
-        grid-column: 1 / 4;
+        grid-column: 1 / 3;
         grid-row: 2;
     }
-}
-    /* Discover */
+
     .stat {
         grid-column: 1/3;
     }
-
 
     .discover {
         grid-column: 3/4;
         grid-row: 1/5;
     }
-    /* Join */
-    form {
-        grid-column: 1/6;
-    }
 
+    .joinform {
+        max-width: 60rem;
+    }
     
     .formgrid {
         display: grid;
@@ -116,11 +86,7 @@
         grid-gap: 1rem;
     }
 
-    .largetext {
-        font-size: 1.5rem;
+    .discover img:hover {
+        border: 1px solid yellow;
     }
-
-    /* Thanks */
-    .thanks {
-        grid-column: 1/6;
-    }    
+}
